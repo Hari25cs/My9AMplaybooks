@@ -1,0 +1,12 @@
+--- # delete direcotry
+- name: my test playbook
+  hosts: webservers
+  become: yes
+
+
+
+  tasks:
+    - name: deleting a directory
+      file:
+        path: /home/ansible/haridir
+        state: absent
